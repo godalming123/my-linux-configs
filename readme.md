@@ -1,3 +1,9 @@
+# Linux setup
+
+This is a project so I can quikly setup linux by just running a script - that also contains details about what I want from linux and a linux distro.\
+**Commad to run script:** `./afterInstall.sh`\
+<sub>\s\*You must run this command from the sh file's root folder in the terminal **with sudo privilages.\***</sub>
+
 # my requirments from a linux distro
 
 ## A good packadge manager
