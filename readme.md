@@ -41,7 +41,7 @@ https://askubuntu.com/questions/597395/how-to-set-custom-keyboard-shortcuts-from
 
 # Os
 
-Fedora
-Endevour
-Manjaro
-Zorin
+- Fedora
+- Endevour
+- Manjaro
+- Zorin
