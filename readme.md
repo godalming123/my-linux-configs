@@ -4,6 +4,11 @@ This is a project so I can quikly setup linux by just running a script - that al
 **Commad to run script:** `./afterInstall.sh`\
 <sub>\*You must run this command from the sh file's root folder in the terminal **with sudo privilages.\***</sub>
 
+# Contents
+
+- [My Requirments from a linux distro](#my-requirments-from-a-linux-distro)
+- [Todo list for project](#Todo-list-to-install-on-script-run)
+
 # my requirments from a linux distro
 
 ## A good packadge manager
