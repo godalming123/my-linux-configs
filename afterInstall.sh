@@ -1,24 +1,33 @@
 #!/usr/bin/env bash
+packadgeManager="apt-get"
+
+installApp(){
+  sudo apt install $1
+}
+
+update(){
+   sudo apt update
+}
 
 #apps
 echo "------------------------------UPDATING SYSTEM------------------------------"
-sudo apt update
+update
 
 echo "------------------------------INSTALLING APPS-------------------------------"
-sudo apt-get install gnome-tweak-tool
-sudo apt-get install tilda
-sudo apt install python3-pip
-sudo apt install code
+installApp gnome-tweak-tool
+installApp tilda
+installApp python3-pip
+installApp code
 
 echo "--------------------INSTALLING GNOME SHELL EXTENSIONS-----------------------"
-sudo apt-get install gnome-shell-extension-gsconnect
-sudo apt-get install gnome-shell-extension-hide-activities
+installApp gnome-shell-extension-gsconnect
+installApp gnome-shell-extension-hide-activities
 
 #flutter (code from: https://flutter.dev/docs/get-started/install/linux#additional-linux-requirements)
 read -p "install flutter? Y/n: " installingFlutter
 if installingFlutter == "Y" {
 sudo snap install flutter --classic
-sudo apt-get install clang cmake ninja-build pkg-config libgtk-3-dev
+installApp clang cmake ninja-build pkg-config libgtk-3-dev
 flutter config --enable-linux-desktop}
 
 #thing
