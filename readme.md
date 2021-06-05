@@ -15,15 +15,17 @@
 - material shell
 - auto move windows
 
-# stuff I havent found a command to install so I am listing here
+# Todo list to install on script run
 
-## extensions
+## Extensions
 
-- **expanding taskbar** _not working_ `sudo apt-get install cario-dock`
+- **expanding taskbar** _not working_ `sudo apt-get install cario-dock` or `sudo apt-get install latte-dock`
 
 - **dynamic top bar transparency** https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/
+- **hide activites button** https://extensions.gnome.org/extension/744/hide-activities-button/
+- **removeable drive menu** https://gitlab.gnome.org/GNOME/gnome-shell-extensions
 
-## icon pack
+## Icon pack
 
 candy https://www.gnome-look.org/s/Gnome/p/1305251/
 cyan breeze https://www.gnome-look.org/p/1483458/
@@ -33,7 +35,11 @@ cyan breeze https://www.gnome-look.org/p/1483458/
 Google accounts https://m.youtube.com/watch?v=XjF_KhUDmfI
 Phone integration https://extensions.gnome.org/extension/1319/gsconnect/
 
-# Os:
+## Add a CTRL + CMD + DEL command to suspend
+
+https://askubuntu.com/questions/597395/how-to-set-custom-keyboard-shortcuts-from-terminal
+
+# Os
 
 Fedora
 Endevour
