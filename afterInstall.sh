@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
-packadgeManager="apt-get"
+echo "enter the command you wold like to use to install packedges. EG: apt-get. :"
+read commandToInstallPackadge
 
 installApp(){
-  sudo apt install $1
+    sudo $commandToInstallPackadge install $1
 }
 
 update(){
-   sudo apt update
+    sudo $commandToInstallPackadge update
 }
 
 #apps
@@ -26,14 +27,14 @@ installApp gnome-shell-extension-hide-activities
 #flutter (code from: https://flutter.dev/docs/get-started/install/linux#additional-linux-requirements)
 read -p "install flutter? Y/n: " installingFlutter
 if installingFlutter == "Y" {
-sudo snap install flutter --classic
-installApp clang cmake ninja-build pkg-config libgtk-3-dev
+    sudo snap install flutter --classic
+    installApp clang cmake ninja-build pkg-config libgtk-3-dev
 flutter config --enable-linux-desktop}
 
 #thing
 
 codeToInstallThemes = $[
-    () => {        
+    () => {
         git clone https://github.com/ZorinOS/zorin-desktop-themes.git
         sudo cp -r zorin-desktop-themes/Z\* /usr/share/themes
     }
