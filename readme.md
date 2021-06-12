@@ -2,10 +2,10 @@
 
 # Contents
 
-- [My Requirments from a linux distro](#my-requirments-from-a-linux-distro)
+- [My Requirments from a linux distro](#My-requirments-from-a-linux-distro)
 - [Todo list for project](#Todo-list-to-install-on-script-run)
 
-# my requirments from a linux distro
+# My requirments from a linux distro
 
 ## A good packadge manager
 
