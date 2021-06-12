@@ -8,7 +8,7 @@ runIfBool(){
 }
 
 installApp(){
-    runIfBool "install $1?" `sudo $packadgeManager install $1`
+    runIfBool "install $1?" "sudo $packadgeManager install $1"
 }
 
 update(){
@@ -16,7 +16,7 @@ update(){
 }
 
 #apps
-echo "------------------------------UPDATING SYSTEM------------------------------"
+echo "==============================UPDATING SYSTEM=============================="
 update
 
 echo "------------------------------INSTALLING APPS-------------------------------"
