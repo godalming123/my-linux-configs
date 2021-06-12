@@ -23,7 +23,8 @@ echo "==============================INSTALLING APPS=============================
 installApp gnome-tweak-tool
 installApp tilda
 installApp python3-pip
-installApp code
+sudo rpm --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
+installApp codium
 
 echo "====================INSTALLING GNOME SHELL EXTENSIONS======================"
 installApp gnome-shell-extension-gsconnect
