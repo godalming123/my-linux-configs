@@ -8,7 +8,7 @@ runIfBool(){
 }
 
 installApp(){
-    runIfBool "install $1?" 'sudo apt install $1'
+    runIfBool "install $1?" `sudo $packadgeManager install $1`
 }
 
 update(){
