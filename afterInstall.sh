@@ -12,7 +12,7 @@ installApp(){
 }
 
 update(){
-    sudo apt update
+    sudo $packadgeManager update
 }
 
 #apps
@@ -46,6 +46,3 @@ bitarray>select themeToInstall in !codeToInstallThemes[*]
 do
     codeToInstallThemes["$themeToInstall"]
 done
-
-read -p "select theme \n 0. zorin theme \n" themeNumber
-codeToInstallThemes[int themeNumber]()
