@@ -31,7 +31,7 @@ installApp gnome-shell-extension-gsconnect
 #flutter (code from: https://flutter.dev/docs/get-started/install/linux#additional-linux-requirements)
 runIfBool "install flutter?" '
   sudo snap install flutter --classic
-  installApp clang cmake ninja-build pkg-config libgtk-3-dev
+  installApp "clang cmake ninja-build pkg-config libgtk-3-dev"
 '
 
 #thing
