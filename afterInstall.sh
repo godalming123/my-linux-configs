@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 clear
-packadgeManager="apt-get"
+read -p "pacadge manager: " packadgeManager
 
 runIfBool(){
     read -p "$1 y/N: " response
