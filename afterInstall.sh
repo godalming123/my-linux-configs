@@ -19,13 +19,13 @@ update(){
 echo "==============================UPDATING SYSTEM=============================="
 update
 
-echo "------------------------------INSTALLING APPS-------------------------------"
+echo "==============================INSTALLING APPS=============================="
 installApp gnome-tweak-tool
 installApp tilda
 installApp python3-pip
 installApp code
 
-echo "--------------------INSTALLING GNOME SHELL EXTENSIONS-----------------------"
+echo "====================INSTALLING GNOME SHELL EXTENSIONS======================"
 installApp gnome-shell-extension-gsconnect
 
 #flutter (code from: https://flutter.dev/docs/get-started/install/linux#additional-linux-requirements)
