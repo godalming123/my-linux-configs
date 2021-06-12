@@ -27,7 +27,6 @@ installApp code
 
 echo "--------------------INSTALLING GNOME SHELL EXTENSIONS-----------------------"
 installApp gnome-shell-extension-gsconnect
-# installApp gnome-shell-extension-hide-activities # does not work
 
 #flutter (code from: https://flutter.dev/docs/get-started/install/linux#additional-linux-requirements)
 runIfBool "install flutter?" '
