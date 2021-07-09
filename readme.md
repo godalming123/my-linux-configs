@@ -25,17 +25,17 @@
 # Todo list to install on script run
 
 ## Extensions
-- **dynamic top bar transparency** https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/
 - **removeable drive menu** https://gitlab.gnome.org/GNOME/gnome-shell-extensions
 - **just perfection** https://extensions.gnome.org/extension/3843/just-perfection/
 -  **desktop scroller** https://extensions.gnome.org/extension/561/desktop-scroller-all-sides-for-gnome-36/
-- **dash to dock** _fort is avilable for gnome 40 https://github.com/micheleg/dash-to-dock/pull/1402_  https://extensions.gnome.org/extension/307/dash-to-dock/
+- **dash to dock** _fork is avilable for gnome 40 https://github.com/micheleg/dash-to-dock/pull/1402_  https://extensions.gnome.org/extension/307/dash-to-dock/
 - **color picker** https://extensions.gnome.org/extension/3396/color-picker/
 - **screenshot tool** https://extensions.gnome.org/extension/1112/screenshot-tool/
 - **vertical overveiw** https://extensions.gnome.org/extension/4144/vertical-overview/
 - **wether in the clock** https://extensions.gnome.org/extension/1380/weather-in-the-clock/
 - **user themes** https://extensions.gnome.org/extension/19/user-themes/
-### Not necerserry or not working
+### Not necerserry or not working or no longer liked
+- **dynamic top bar transparency** _I dont like_ https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/
 - **expanding taskbar** _not working_ `sudo apt-get install cario-dock` or `sudo apt-get install latte-dock`
 - **hide activites button** _not needed as there is a setting in just perfection extension_ https://extensions.gnome.org/extension/744/hide-activities-button/
 
