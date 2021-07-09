@@ -34,6 +34,7 @@
 - **vertical overveiw** https://extensions.gnome.org/extension/4144/vertical-overview/
 - **wether in the clock** https://extensions.gnome.org/extension/1380/weather-in-the-clock/
 - **user themes** https://extensions.gnome.org/extension/19/user-themes/
+- **drop down terminal** https://extensions.gnome.org/extension/3780/ddterm/
 ### Not necerserry or not working or no longer liked
 - **dynamic top bar transparency** _I dont like_ https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/
 - **expanding taskbar** _not working_ `sudo apt-get install cario-dock` or `sudo apt-get install latte-dock`
