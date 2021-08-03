@@ -1,0 +1,8 @@
+{
+	gnomeExtensions: {
+		moveIf: "gnome-desktop",
+		currentLocation: "./gnome extensions"
+		newLocation: "/home/$user/.local/share/gnome-shell/extensions"
+	}
+}
+
