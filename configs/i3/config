@@ -4,6 +4,41 @@
 
 set $mod Mod4
 
+# execute a compisitor
+exec "picom -f -o=0"
+
+#colors
+set $text-color            #ffffff
+set $faded-text-color      #a3a3a3
+set $separator-color       #212121
+set $bg-color              #2f343f
+set $alt-bg-color          #1c1f26
+set $urgent-color          #ef3510
+set $accent-color          #0c6d46
+set $faded-accent-color    #063522
+
+#set top bar colors
+#                       border               background         text               indicator
+client.focused          $bg-color            $bg-color          $text-color        $accent-color
+client.unfocused        $alt-bg-color        $alt-bg-color      $faded-text-color  $faded-accent-color
+client.focused_inactive $alt-bg-color        $alt-bg-color      $faded-text-color  $faded-accent-color
+client.urgent           $urgent-color        $urgent-color      $text-color        $urgent-color
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        status_command i3blocks
+        colors {
+                background $bg-color
+                separator  $separator-color
+
+                #                  border        background    text
+                focused_workspace  $bg-color     $bg-color     $text-color
+                inactive_workspace $bg-color     $bg-color     $faded-text-color
+                urgent_workspace   $urgent-color $urgent-color $text-color
+        }
+}
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 8
@@ -42,7 +77,7 @@ bindsym $mod+q kill
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
-bindsym $mod+e exec "rofi -modi drun,run -show drun"
+bindsym $mod+e exec rofi -show run -eh 1 -width 100 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
@@ -167,9 +202,3 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        status_command i3status
-}
