@@ -4,6 +4,11 @@
 
 set $mod Mod4
 
+#for_window [class=".*"] border pixel 0
+#smart_borders on
+#border-radius 5
+#gaps [10 | 10]
+
 # execute a compisitor
 exec "picom -f -o=0"
 
@@ -27,7 +32,11 @@ client.urgent           $urgent-color        $urgent-color      $text-color     
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3blocks
+	#i3bar_command i3bar
+        status_command i3blocks -c /home/whatever/.config/i3/i3blocks.ini
+	position top
+	#height 20
+	#workspace_buttons no
         colors {
                 background $bg-color
                 separator  $separator-color
@@ -38,6 +47,13 @@ bar {
                 urgent_workspace   $urgent-color $urgent-color $text-color
         }
 }
+
+#when I press mod+x lock my system and suspend
+bindsym $mod+x exec i3lock --color "$bg-color" && systemctl suspend
+
+workspace_layout tabbed
+title_align center
+#hide_edge_borders both
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
